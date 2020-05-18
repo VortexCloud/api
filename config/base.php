@@ -7,4 +7,5 @@ return [
     'SERVICE_ADDRESS' => env('SERVICE_ADDRESS', '172.20.0.16'),
     'CONSUL_ADDRESS' => env('CONSUL_ADDRESS', '172.20.1.1'),
     'CONSUL_PORT' => env('CONSUL_PORT', '8500'),
+    'USER_SERVICE_CLIENT' => env('USER_SERVICE_CLIENT', '172.20.0.15'),
 ];

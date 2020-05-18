@@ -55,7 +55,8 @@ class RpcProvider implements ProviderInterface
     {
         // Get health service from consul
         $services = $this->agent->services();
-
+var_dump($services);
+var_dump($services->getResult());
         $services = [
 
         ];
