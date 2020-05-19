@@ -193,4 +193,10 @@ return [
         'port' => config('CONSUL_PORT'),
         'timeout' => 1,
     ],
+    'breaker' => [
+        'timeout' => 2,
+        'failThreshold' => 5,
+        'sucThreshold' => 3,
+        'retryTime' => 3,
+    ],
 ];

@@ -3,6 +3,7 @@
 namespace App\Http\Controller;
 
 use App\Rpc\Lib\UsersInterface;
+use Swoft\Breaker\Annotation\Mapping\Breaker;
 use Swoft\Http\Server\Annotation\Mapping\Controller;
 use Swoft\Http\Server\Annotation\Mapping\RequestMapping;
 use Swoft\Http\Server\Annotation\Mapping\RequestMethod;
@@ -24,6 +25,7 @@ class UsersController
     protected $usersService;
 
     /**
+     * @Breaker()
      * @RequestMapping("index",method=RequestMethod::GET)
      *
      * @return array
