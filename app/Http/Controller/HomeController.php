@@ -31,11 +31,8 @@ class HomeController
      */
     public function index(): Response
     {
-        /** @var Renderer $renderer */
-        $renderer = Swoft::getBean('view');
-        $content  = $renderer->render('home/index');
-
-        return context()->getResponse()->withContentType(ContentType::HTML)->withContent($content);
+        $content = "Hello SWOFT";
+        return context()->getResponse()->withContent($content);
     }
 
     /**
